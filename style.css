@@ -1,0 +1,785 @@
+* { 
+  margin: 0%; 
+  padding: 0%; 
+  box-sizing: border-box; 
+}
+
+@font-face {
+  font-family: Shunsine;
+  src: url('ShunsinedemoRegular-Yz7z8.otf') format('opentype');
+}
+
+a.quick_menu {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+a.quick_menu:hover {
+    color: #c5c5c5;
+}
+
+h1.sale {
+  color: white;
+  text-transform: uppercase;
+  font-size: 700%;
+  letter-spacing: 5px;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1#style-sale\(1\) {
+  z-index: 3;
+  top: 15%;
+  color: darkgray;
+}
+
+h1#style-sale\(2\) {
+  z-index: 2;
+  top: 31.5%;
+  font-size: 800%;
+  color: #565656;
+}
+
+h1#style-sale\(3\) {
+  z-index: 1;
+  top: 51.5%;
+  color: #272727;
+}
+
+p#style-text {
+  margin-top: 39%;
+}
+
+p.text_sale {
+    font-size: 125%;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+.khung_sale {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.rows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.about_us-desktop {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+p.mo-ta-anh {
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h1.title-anh {
+    color: #ff7171;
+    font-size: 200%;
+}
+
+.khung-text {
+    width: 50%;
+    height: auto;
+    padding-left: 5%;
+}
+
+img.anh_sp\(1\) {
+    width: 40%;
+    height: 100%;
+    margin-right: 3%;
+    margin-left: 3%;
+    border-radius: 10px;
+}
+
+div#Home {
+    background-color: #020003;
+}
+
+p.text-about_us {
+    font-size: 105%;
+    color: #656565;
+}
+
+p.title-about_us {
+    font-size: 130%;
+    margin-bottom: 2%;
+}
+
+h1.numbers {
+    font-size: 300%;
+    position: absolute;
+    left: -10%;
+    top: 35%;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: white;
+    color: #ff6363;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 10%);
+}
+
+.row {
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 6%;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+img.myself {
+    height: 100%;
+    width: auto;
+}
+
+p.text-about_us\(left\) {
+    text-align: left;
+    font-size: 120%;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 10%;
+    color: #656565;
+}
+
+.right {
+    width: 36%;
+    height: 465px;
+    position: relative;
+}
+
+.middle {
+    width: 32%;
+    height: 550px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.left {
+    width: 30%;
+    height: 350px;
+    text-align: center;
+}
+
+div#About_Us {
+    background-color: #efefef;
+}
+
+.line-mobile, .line-tablet, .about_us-tablet, .about_us-mobile, img.anh_sp\(2\), #Mobile {
+  display: none;
+}
+
+p.budget-2 { 
+  color: gray; 
+  font-weight: bold; 
+  font-size: 85%; 
+  margin-top: -7px; 
+  margin-left: 2%; 
+  text-decoration: line-through; 
+}
+
+.budget-container { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  margin-top: 2%; 
+}
+
+p.budget-1 { 
+  font-weight: bold; 
+  color: red; 
+  font-size: 100%; 
+}
+
+p.name-item { 
+  font-weight: bold; 
+  margin-top: 2%; 
+  font-size: 105%; 
+}
+
+.khung-hinh {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 10px 10px 3px 3px;
+}
+img.hinh {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease 0s;
+  border-radius: 10px 10px 3px 3px;
+}
+div#Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.line-desktop {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  position: relative;
+  display: flex;
+  margin-bottom: 3%;
+}
+.item {
+  width: 22%;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 15px 15px 5px rgb(0 0 0 / 20%);
+}
+.item:hover .hinh {
+  transform: scale(1.125);
+}
+div#Shop {
+  margin-top: -90px;
+  background-color: rgb(245 244 244);
+  padding-bottom: 1%;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  background-color: #020003;
+}
+img#banner\ \(2\), #banner\ \(3\) {
+  display: none;
+}
+p.title {
+  font-weight: bold;
+  font-size: 350%;
+  font-family: Shunsine;
+  background: linear-gradient(to right, rgba(211, 211, 211), rgba(255, 253, 208));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  /* background: linear-gradient(to right, rgb(205, 255, 156), rgb(255, 138, 138)) 0% 0% / 500% text;
+  -webkit-text-fill-color: transparent;
+  animation: 3s ease-in-out 0s infinite alternate none running textShine; */
+  letter-spacing: 0px;
+}
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.container-title {
+  width: auto;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  line-height: 80px;
+  top: 25%;
+}
+img.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.small-container {
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+a.menu_scroll {
+  color: rgb(231, 231, 231);
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+}
+li.cap_1 {
+  margin: 0px 20px;
+  font-size: 130%;
+  padding: 12px 0px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+li.cap_1:hover a.menu_scroll {
+  color: rgb(255, 46, 46);
+}
+li.cap_1:hover {
+  border-bottom: 1px solid red;
+}
+ul.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  list-style: none;
+  width: auto;
+  height: 50px;
+  margin-left: 50%;
+}
+img.logo {
+  width: 120px;
+  margin-left: 20px;
+  margin-top: -35px;
+  cursor: pointer;
+}
+.container-logo {
+  width: 15%;
+  height: 50px;
+}
+nav {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  position: fixed;
+  background-color: rgba(58, 58, 58, 0.51);
+  align-items: center;
+  z-index: 10;
+  border-bottom: 1px solid transparent;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: white;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 50px;
+}
+
+.row_footer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col_footer {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col_footer:nth-child(2), .col_footer:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.logo-footer {
+  width: 40%;
+}
+
+.title-footer {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+#email {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.form-footer {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.fa-envelope {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.nhap-email {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: #ccc;
+}
+
+.submit {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer
+}
+
+.fa-arrow-right {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.underline-footer {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+
+.animation-underline {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2.5s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+      left: -20px;
+  }
+  100% {
+      left: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    background-color: #020003;
+  }
+  .container-logo, img#banner\ \(1\), img#banner\ \(2\), .line-desktop, .about_us-desktop, img.anh_sp\(1\) {
+    display: none;
+  }
+  footer {
+    bottom: unset;
+  }
+  .col_footer {
+    flex-basis: 100%;
+  }
+  .col_footer:nth-child(2), .col_footer:nth-child(3) {
+    flex-basis: 100%;
+  }
+  img#banner\ \(3\) {
+    display: block;
+    height: 100vh;
+  }
+  nav {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  ul.menu {
+    margin-left: 0%;
+  }
+  p.title {
+    font-size: 175%;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+  }
+  .container-title {
+    line-height: 50px;
+    top: 20%;
+  }
+  .line-tablet {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .item {
+    width: 45%;
+    height: auto;
+  }
+  .khung-hinh {
+    height: 220px;
+  }
+  div#About_Us {
+    display: block;
+    gap: 0px;
+  }
+  .about_us-tablet {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .left {
+    padding-top: 7%;
+    width: 100%;
+    text-align: center;
+  }
+  p.text-about_us\(left\) {
+    text-align: center;
+    padding-right: 5%;
+  }
+  .connect-middle-right {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -20%;
+  }
+  .middle {
+    width: 50%;
+  }
+  .right {
+    width: 49%;
+    height: auto;
+    margin-top: 10%;
+  }
+  .row {
+    width: 100%;
+    height: auto;
+    padding-left: 15%;
+    position: relative;
+    margin-bottom: 10%;
+    text-align: left;
+  }
+  #About_Us {
+    margin-top: -4%;
+  }
+  img.anh_sp\(2\) {
+    display: block;
+    width: 45%;
+    padding-right: 5%;
+  }
+  .khung-text {
+    padding-left: 2%;
+    padding-right: 5%;
+  }
+  h1#style-sale\(1\) {
+  z-index: 3;
+  top: 15%;
+  color: darkgray;
+  }
+
+  h1#style-sale\(2\) {
+    z-index: 2;
+    top: 31%;
+    font-size: 800%;
+    color: #565656;
+  }
+
+  h1#style-sale\(3\) {
+    z-index: 1;
+    top: 51%;
+    color: #272727;
+  }
+
+  p#style-text {
+    margin-top: 67%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-color: #020003;
+  }
+  .line-tablet, img#banner\ \(1\), img#banner\ \(3\), .about_us-tablet, #Desktop {
+    display: none;
+  }
+
+  img#banner\ \(2\) {
+    display: block;
+  }
+  .line-mobile {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .item {
+    width: 85%;
+    height: auto
+  }
+  .khung-hinh {
+    height: 235px;
+  }
+  .about_us-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .middle {
+    width: 90%;
+    margin: auto;
+  }
+  .right {
+    width: 100%;
+  }
+  .row {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  h1.numbers {
+    text-align: center;
+    font-size: 300%;
+    width: 25%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    margin-left: 47%;
+    margin-bottom: 5%;
+  }
+  #number\(1\) {
+    position: absolute;
+    left: -9%;
+    top: -35%;
+  }
+  p.title-about_us {
+    padding-top: 5%;
+  }
+  .rows {
+    display: block;
+  }
+  img.anh_sp\(2\) {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .khung-text {
+    width: 100%;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 3%;
+  }
+  .title-anh {
+    text-align: center;
+  }
+  #Mobile {
+    display: block;
+    margin-top: 10%;
+  }
+  h1#style-sale\(1\) {
+    z-index: 3;
+    top: 15%;
+    color: darkgray;
+    }
+  
+    h1#style-sale\(2\) {
+      z-index: 2;
+      top: 30.5%;
+      font-size: 450%;
+      color: #565656;
+    }
+  
+    h1#style-sale\(3\) {
+      z-index: 1;
+      top: 51.5%;
+      color: #272727;
+    }
+
+    h1.sale {
+      font-size: 350%;
+    }
+  
+    p#style-text {
+      margin-top: 73%;
+    }
+    .khung_sale {
+      margin: auto;
+    }
+    p.text_sale {
+      font-size: 100%;
+      letter-spacing: 5px;
+    }
+    li.cap_1 {
+      margin: 0px 5px;
+      padding: 3% 0px;
+    }
+    #About_Us {
+      padding-bottom: 5%;
+    }
+    p.title {
+      font-weight: bold;
+      font-size: 150%;
+      font-family: Shunsine;
+      background: linear-gradient(to right, rgba(211, 211, 211), rgba(255, 253, 208));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    
+      /* background: linear-gradient(to right, rgb(205, 255, 156), rgb(255, 138, 138)) 0% 0% / 500% text;
+      -webkit-text-fill-color: transparent;
+      animation: 3s ease-in-out 0s infinite alternate none running textShine; */
+      letter-spacing: 0px;
+    }
+}
